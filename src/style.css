@@ -1,0 +1,201 @@
+/* RESET */
+*{ box-sizing:border-box; }
+body{
+  margin:0;
+  font-family:"Segoe UI", Roboto, Arial, sans-serif;
+  background:#080812; /* hitam kebiruan */
+  color:#e6e6ff; /* putih kebiruan */
+}
+
+/* ------------------------------------------
+   SIDEBAR
+-------------------------------------------*/
+.sidebar{
+  position:fixed;
+  left:0; top:0;
+  width:240px; height:100vh;
+  background:linear-gradient(180deg,#0c0e16,#111526,#180033); /* hitam → biru → ungu */
+  padding:18px;
+  box-shadow: 4px 0 18px rgba(0,0,0,0.4);
+}
+
+.sidebar .brand{
+  font-size:20px;
+  font-weight:800;
+  color:#7ab8ff;
+  text-align:center;
+  margin-bottom:18px;
+}
+
+.sidebar a{
+  display:block;
+  padding:12px;
+  color:#dce9ff;
+  text-decoration:none;
+  border-radius:10px;
+  margin:6px 0;
+  background:transparent;
+  transition:0.15s ease;
+}
+
+.sidebar a:hover{
+  background:linear-gradient(90deg,#6a32ff,#1674ff);
+  color:#fff;
+  transform:translateX(6px);
+}
+
+/* ------------------------------------------
+   NAVBAR / HEADER
+-------------------------------------------*/
+.header{
+  position:fixed;
+  left:240px;
+  right:0; top:0;
+  height:60px;
+
+  background:linear-gradient(90deg,#1a0036,#0d2e87,#5a00b8); /* ungu → biru → ungu */
+  display:flex;
+  align-items:center;
+  padding:0 24px;
+  box-shadow:0 2px 14px rgba(0,0,0,0.45);
+  z-index:50;
+}
+.header .title{
+  font-size:20px;
+  font-weight:700;
+  color:#eeeeff;
+}
+
+/* ------------------------------------------
+   CONTENT WRAPPER
+-------------------------------------------*/
+.content{
+  margin-left:240px;
+  padding:90px 26px 32px;
+  background:#0b0c16;
+  min-height:100vh;
+}
+
+/* ------------------------------------------
+   CARD
+-------------------------------------------*/
+.card{
+  background:linear-gradient(180deg,#0e1020,#131732); /* biru gelap */
+  border-radius:14px;
+  padding:18px;
+  color:#e6e6ff;
+  box-shadow:0 10px 45px rgba(0,0,0,0.55);
+}
+
+/* ------------------------------------------
+   LOGIN PAGE
+-------------------------------------------*/
+.login-center{
+  height:100vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  background:linear-gradient(135deg,#060610,#0e1a3a,#29006d);
+}
+
+.login-card{
+  width:360px;
+  padding:26px 26px 32px;
+  border-radius:16px;
+  text-align:center;
+
+  background:linear-gradient(180deg,#0e0f18,#12162a,#1f0048);
+  box-shadow:0 16px 58px rgba(0,0,0,0.75);
+}
+
+/* logo */
+.login-logo img{
+  width:150px;
+  margin-bottom:18px;
+  filter: drop-shadow(0 0 10px rgba(110, 60, 255, 0.6));
+}
+
+/* input */
+.login-card input{
+  width:100%;
+  padding:12px;
+  margin:10px 0;
+  border-radius:10px;
+  border:none;
+  background:#0a0e19;
+  color:#fff;
+  font-size:15px;
+  outline:none;
+}
+.login-card input:focus{
+  box-shadow:0 0 10px #6f3bff;
+}
+
+/* ------------------------------------------
+   BUTTONS
+-------------------------------------------*/
+.btn{
+  width:100%;
+  padding:12px;
+  margin-top:6px;
+  border-radius:10px;
+  border:none;
+  cursor:pointer;
+  font-weight:600;
+  font-size:15px;
+  background:linear-gradient(90deg,#1b5cff,#873bff);
+  color:#fff;
+  transition:0.2s ease;
+}
+.btn:hover{
+  opacity:0.92;
+  transform:translateY(-2px);
+}
+
+/* add button */
+.add-btn{
+  display:inline-block;
+  padding:10px 16px;
+  background:linear-gradient(90deg,#176bff,#7a2bff);
+  color:#fff;
+  border-radius:10px;
+  text-decoration:none;
+  margin-bottom:15px;
+  font-weight:600;
+}
+.add-btn:hover{
+  opacity:0.92;
+  transform:translateY(-2px);
+}
+
+/* small text */
+.small{
+  color:#9fbfff;
+  font-size:13px;
+  text-align:center;
+}
+
+/* ------------------------------------------
+   TABLE
+-------------------------------------------*/
+.table{
+  width:100%;
+  border-collapse:collapse;
+  margin-top:14px;
+  background:#0d1124;
+  color:#e8e8ff;
+}
+.table th{
+  background:#1b1f39;
+  padding:12px;
+  text-align:left;
+  color:#9dbaff;
+  font-weight:700;
+}
+.table td{
+  padding:12px;
+  border-bottom:1px solid rgba(255,255,255,0.06);
+}
+.table tr:hover{
+  background:#151a33;
+}
