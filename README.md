@@ -43,6 +43,6 @@ Pengujian (Unit Testing)
 
 Struktur Repositori
  docs/       : Dokumen SRS & Manual
- src/        : Source code aplikasi (PHP, CSS, JS)
+ src/        : Source code aplikasi (PHP, CSS)
  tests/      : File pengujian unit fitur
  README.md   : Dokumentasi utama
